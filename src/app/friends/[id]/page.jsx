@@ -1,8 +1,10 @@
+import ActionButtons from "@/app/components/ActionBtn/ActionButtons";
+import CheckInAction from "@/app/components/Checkingsection/CheckinSection";
 import { notFound } from "next/navigation";
 import { FiArchive, FiClock, FiMessageSquare, FiPhone, FiTrash2, FiVideo } from "react-icons/fi";
 
 const FriendPromise = async function () {
-    const res = await fetch("http://localhost:3001/friends.json")
+    const res = await fetch("http://localhost:3000/friends.json")
     const data = await res.json();
     return data;
 }
@@ -10,10 +12,9 @@ const FriendPromise = async function () {
 const FriendDetails = async ({ params }) => {
     const friends = await FriendPromise();
     const { id } = await params;
+    console.log(id)
 
-    const friend = friends.find((friend) => friend.id == id)
-    // console.log(friend, "apps")
-
+    const friend = friends.find((friend) => friend.id === parseInt(id))
        if (!friend) notFound();
 
     return (
@@ -36,11 +37,11 @@ const FriendDetails = async ({ params }) => {
                                 {friend.status}
                             </div>
                             <div className="badge badge-success badge-outline font-bold text-[10px] uppercase">
-                                {friend.tags[0]}
+                                {friend.tags?.[0]}
                             </div>
                         </div>
 
-                        <p className="text-gray-500 italic mt-6 text-sm italic">"{friend.bio}"</p>
+                        <p className="text-gray-500 mt-6 text-sm">"{friend.bio}"</p>
                         <p className="text-xs text-base-content/50 mt-4 font-medium uppercase tracking-tight">Preferred: Email</p>
                     </div>
 
@@ -97,7 +98,7 @@ const FriendDetails = async ({ params }) => {
                     </div>
 
                     {/* Quick Check-In */}
-                    <div className="card bg-base-100 border border-base-300 p-8 shadow-sm">
+                    {/* <div className="card bg-base-100 border border-base-300 p-8 shadow-sm">
                         <h3 className="text-sm font-bold opacity-70 mb-6">Quick Check-In</h3>
                         <div className="grid grid-cols-3 gap-4">
                             <button className="flex flex-col items-center gap-3 p-8 border border-base-200 rounded-2xl hover:bg-primary/5 hover:border-primary transition group">
@@ -113,7 +114,9 @@ const FriendDetails = async ({ params }) => {
                                 <span className="text-sm font-medium">Video</span>
                             </button>
                         </div>
-                    </div>
+                          
+                    </div> */}
+                    <ActionButtons friend={friend} />
                 </div>
             </div>
         </div>
