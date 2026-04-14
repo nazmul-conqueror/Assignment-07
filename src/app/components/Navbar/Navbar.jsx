@@ -12,14 +12,14 @@ const Navbar = () => {
     `btn ${pathname === path ? "bg-[#244d3f] text-white" : ""}`;
 
   return (
-    <div className="navbar bg-base-100 shadow-sm">
+    <div className="navbar bg-base-100 shadow-sm flex-wrap">
       <div className="navbar-start">
-        <p className="text-xl font-bold">
+        <p className="text-xl md:text-xl font-bold">
           <span className="text-[#244d3f]">Keen</span>Keeeper
         </p>
       </div>
 
-      <div className="navbar-end gap-2">
+      <div className="navbar-end gap-2 flex-wrap">
         <Link href="/" className={linkClass("/")}>
           <RiHome4Line /> Home
         </Link>

@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Arafat Rahman",
+    "picture": "https://randomuser.me/api/portraits/men/32.jpg",
+    "email": "arafat.rahman@gmail.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["college", "close friend"],
+    "bio": "We studied Computer Science together at university. Used to code late nights and play FIFA.",
+    "goal": 14,
+    "next_due_date": "2026-04-05"
+  },
+  {
+    "id": 2,
+    "name": "Nusrat Jahan",
+    "picture": "https://randomuser.me/api/portraits/women/44.jpg",
+    "email": "nusrat.jahan@yahoo.com",
+    "days_since_contact": 10,
+    "status": "almost due",
+    "tags": ["work", "designer"],
+    "bio": "Colleague from my first job. We collaborated on multiple UI/UX projects.",
+    "goal": 14,
+    "next_due_date": "2026-04-18"
+  },
+  {
+    "id": 3,
+    "name": "Siam Ahmed",
+    "picture": "https://randomuser.me/api/portraits/men/65.jpg",
+    "email": "siam.ahmed@gmail.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["gym", "fitness buddy"],
+    "bio": "We go to the gym together every weekend and push each other to stay consistent.",
+    "goal": 14,
+    "next_due_date": "2026-04-23"
+  },
+  {
+    "id": 4,
+    "name": "Farzana Akter",
+    "picture": "https://randomuser.me/api/portraits/women/68.jpg",
+    "email": "farzana.akter@gmail.com",
+    "days_since_contact": 20,
+    "status": "overdue",
+    "tags": ["school", "old friend"],
+    "bio": "We’ve been friends since school. She now lives in Chattogram.",
+    "goal": 14,
+    "next_due_date": "2026-04-02"
+  },
+  {
+    "id": 5,
+    "name": "Rakib Hasan",
+    "picture": "https://randomuser.me/api/portraits/men/21.jpg",
+    "email": "rakib.hasan@gmail.com",
+    "days_since_contact": 13,
+    "status": "almost due",
+    "tags": ["startup", "business"],
+    "bio": "Runs a small startup. We often discuss ideas and tech trends over coffee.",
+    "goal": 14,
+    "next_due_date": "2026-04-15"
+  },
+  {
+    "id": 6,
+    "name": "Tania Sultana",
+    "picture": "https://randomuser.me/api/portraits/women/12.jpg",
+    "email": "tania.sultana@gmail.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["family friend"],
+    "bio": "Family friend who loves cooking and always invites us during festivals.",
+    "goal": 14,
+    "next_due_date": "2026-04-25"
+  },
+  {
+    "id": 7,
+    "name": "Imran Hossain",
+    "picture": "https://randomuser.me/api/portraits/men/54.jpg",
+    "email": "imran.hossain@gmail.com",
+    "days_since_contact": 16,
+    "status": "overdue",
+    "tags": ["university", "project partner"],
+    "bio": "Worked together on final year project. Now working in a software company abroad.",
+    "goal": 14,
+    "next_due_date": "2026-04-08"
+  },
+  {
+    "id": 8,
+    "name": "Mahiya Chowdhury",
+    "picture": "https://randomuser.me/api/portraits/women/30.jpg",
+    "email": "mahiya.c@gmail.com",
+    "days_since_contact": 7,
+    "status": "on-track",
+    "tags": ["travel", "close friend"],
+    "bio": "Travel partner. We explored Sylhet and Bandarban together last year.",
+    "goal": 14,
+    "next_due_date": "2026-04-21"
+  }
+]
