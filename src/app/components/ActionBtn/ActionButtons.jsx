@@ -1,9 +1,11 @@
 "use client";
 
 import { TimelineContext } from "@/app/context/timeline.context";
+
 import { useContext } from "react";
 
 import { FiPhone, FiMessageSquare, FiVideo } from "react-icons/fi";
+import { toast } from "react-toastify";
 
 const ActionButtons = ({ friend }) => {
   const { addInteraction } = useContext(TimelineContext);
@@ -16,12 +18,19 @@ const ActionButtons = ({ friend }) => {
       image: friend.picture,
       date: new Date(),
     });
+   toast.success(`${type} with ${friend.name}`);
   };
 
+
+
   return (
+
+    
     <div className="grid grid-cols-3 gap-4">
       <button
-        onClick={() => handleAction("call")}
+        onClick={() => handleAction("call")
+            
+        }
         className="btn h-auto py-6 flex flex-col items-center gap-2"
       >
         <FiPhone />
