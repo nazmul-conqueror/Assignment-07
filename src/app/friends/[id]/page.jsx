@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { FiArchive, FiClock, FiTrash2,  } from "react-icons/fi";
 
 const FriendPromise = async function () {
-    const res = await fetch("http://localhost:3000/friends.json")
+    const res = await fetch("https://keen-keeper-gamma-ashen.vercel.app/friends.json")
     const data = await res.json();
     return data;
 }
