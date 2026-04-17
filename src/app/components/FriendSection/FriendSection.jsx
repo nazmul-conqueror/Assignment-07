@@ -3,7 +3,9 @@ import FriendCard from "./FriendCard";
 
 
 const friendsPromise = async function (){
-    const res = await fetch("https://keen-keeper-gamma-ashen.vercel.app/friends.json")
+    const res = await fetch("https://keen-keeper-gamma-ashen.vercel.app/friends.json",{
+        cache:"no-store"
+    })
     const data = await res.json();
     return data;
 }
