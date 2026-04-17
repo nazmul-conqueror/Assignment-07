@@ -1,7 +1,6 @@
 import ActionButtons from "@/app/components/ActionBtn/ActionButtons";
-import CheckInAction from "@/app/components/Checkingsection/CheckinSection";
 import { notFound } from "next/navigation";
-import { FiArchive, FiClock, FiMessageSquare, FiPhone, FiTrash2, FiVideo } from "react-icons/fi";
+import { FiArchive, FiClock, FiTrash2,  } from "react-icons/fi";
 
 const FriendPromise = async function () {
     const res = await fetch("http://localhost:3000/friends.json")
@@ -21,9 +20,9 @@ const FriendDetails = async ({ params }) => {
         <div className="max-w-6xl mx-auto p-8 bg-base-200 min-h-screen">
             <div className="grid grid-cols-12 gap-6">
 
-                {/* --- SIDEBAR --- */}
+             
                 <div className="col-span-12 md:col-span-3 space-y-4">
-                    {/* Profile Card */}
+                 
                     <div className="card bg-base-100 shadow-sm border border-base-300 items-center p-6 text-center">
                         <div className="avatar mb-4">
                             <div className="w-24 rounded-full ring ring-offset-base-100 ring-offset-2 ring-gray-100">
@@ -45,7 +44,7 @@ const FriendDetails = async ({ params }) => {
                         <p className="text-xs text-base-content/50 mt-4 font-medium uppercase tracking-tight">Preferred: Email</p>
                     </div>
 
-                    {/* Action Menu (daisyUI Menu Component) */}
+                   
                     <ul className="menu bg-base-100 w-full rounded-xl border border-base-300 p-0 shadow-sm overflow-hidden">
                         <li>
                             <button className="flex justify-center gap-2 py-4 rounded-none hover:bg-base-200">
@@ -70,7 +69,7 @@ const FriendDetails = async ({ params }) => {
                 {/* --- MAIN CONTENT --- */}
                 <div className="col-span-12 md:col-span-9 space-y-6">
 
-                    {/* Top Stats */}
+                  
                     <div className="grid grid-cols-3 gap-6">
                         <div className="card bg-base-100 border border-base-300 p-8 shadow-sm items-center">
                             <span className="text-4xl font-bold text-base-content">{friend.days_since_contact}</span>
@@ -97,25 +96,7 @@ const FriendDetails = async ({ params }) => {
                         <button className="btn btn-sm btn-outline btn-ghost border-base-300 font-bold capitalize">Edit</button>
                     </div>
 
-                    {/* Quick Check-In */}
-                    {/* <div className="card bg-base-100 border border-base-300 p-8 shadow-sm">
-                        <h3 className="text-sm font-bold opacity-70 mb-6">Quick Check-In</h3>
-                        <div className="grid grid-cols-3 gap-4">
-                            <button className="flex flex-col items-center gap-3 p-8 border border-base-200 rounded-2xl hover:bg-primary/5 hover:border-primary transition group">
-                                <FiPhone className="text-base-content/60 group-hover:text-primary" size={24} />
-                                <span className="text-sm font-medium">Call</span>
-                            </button>
-                            <button className="flex flex-col items-center gap-3 p-8 border border-base-200 rounded-2xl hover:bg-primary/5 hover:border-primary transition group">
-                                <FiMessageSquare className="text-base-content/60 group-hover:text-primary" size={24} />
-                                <span className="text-sm font-medium">Text</span>
-                            </button>
-                            <button className="flex flex-col items-center gap-3 p-8 border border-base-200 rounded-2xl hover:bg-primary/5 hover:border-primary transition group">
-                                <FiVideo className="text-base-content/60 group-hover:text-primary" size={24} />
-                                <span className="text-sm font-medium">Video</span>
-                            </button>
-                        </div>
-                          
-                    </div> */}
+                   
                     <ActionButtons friend={friend} />
                 </div>
             </div>
