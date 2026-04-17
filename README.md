@@ -15,3 +15,8 @@ Technologies I Used:
 --- Recharts (for data visualization)
 --- Vercel (Deployment)
 
+Key Features
+
+--Users can log and view all interactions (calls, messages, etc.) in a structured timeline, helping them stay organized and never miss important follow-ups.
+
+--Integrated charts provide insights into communication patterns, such as number of calls vs messages, using interactive graphs.
